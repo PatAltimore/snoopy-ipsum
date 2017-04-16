@@ -41,4 +41,6 @@ app.get('/api/beta/section/:howmany', function(req, res) {
 });
 
 
-app.listen(process.env.PORT || 8080, "0.0.0.0");
+app.listen(process.env.PORT || 8080, function () {
+  console.log('Snoopy bot listening on port 8080.')
+})
